@@ -8,28 +8,28 @@ export const ActivityFeed: React.FC = () => {
       title: 'New user registered',
       description: 'Sarah Johnson joined the platform',
       time: '2 minutes ago',
-      color: 'bg-blue-500',
+      color: 'bg-gray-600',
     },
     {
       icon: ShoppingCart,
       title: 'New order received',
       description: 'Order #12847 worth $299.99',
       time: '5 minutes ago',
-      color: 'bg-green-500',
+      color: 'bg-gray-600',
     },
     {
       icon: FileText,
       title: 'Report generated',
       description: 'Monthly sales report is ready',
       time: '15 minutes ago',
-      color: 'bg-purple-500',
+      color: 'bg-gray-600',
     },
     {
       icon: Bell,
       title: 'System notification',
       description: 'Server maintenance scheduled',
       time: '1 hour ago',
-      color: 'bg-orange-500',
+      color: 'bg-gray-600',
     },
   ];
 

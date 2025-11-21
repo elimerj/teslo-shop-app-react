@@ -19,7 +19,7 @@ const stats = [
     change: '+12.5% from last month',
     changeType: 'positive' as const,
     icon: Users,
-    color: 'bg-blue-500',
+    color: 'bg-gray-600',
   },
   {
     title: 'Revenue',
@@ -27,7 +27,7 @@ const stats = [
     change: '+8.2% from last month',
     changeType: 'positive' as const,
     icon: DollarSign,
-    color: 'bg-green-500',
+    color: 'bg-gray-600',
   },
   {
     title: 'Orders',
@@ -35,7 +35,7 @@ const stats = [
     change: '-2.4% from last month',
     changeType: 'negative' as const,
     icon: ShoppingCart,
-    color: 'bg-purple-500',
+    color: 'bg-gray-600',
   },
   {
     title: 'Conversion Rate',
@@ -43,7 +43,7 @@ const stats = [
     change: '+0.3% from last month',
     changeType: 'positive' as const,
     icon: TrendingUp,
-    color: 'bg-orange-500',
+    color: 'bg-gray-600',
   },
 ];
 
@@ -66,11 +66,11 @@ export const DashboardPage = () => {
       {/* Welcome Section */}
       <AdminTitle
         title='Dashboard'
-        subtitle='Aqui puedes ver el estado de tu negocio'
+        subtitle='Aquí puedes ver el estado de tu negocio'
       />
 
       {/* Stats Grid */}
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 '>
         {stats.map((stat, index) => (
           <StatCard key={index} {...stat} />
         ))}

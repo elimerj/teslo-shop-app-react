@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { AdminSidebar } from '../components/AdminSidebar';
 import { AdminHeader } from '../components/AdminHeader';
-import { Outlet } from 'react-router';
+import { Outlet, ScrollRestoration } from 'react-router';
 
 const AdminLayout = () => {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
@@ -16,6 +16,7 @@ const AdminLayout = () => {
         <AdminHeader />
 
         <main className='flex-1 p-6'>
+          <ScrollRestoration />
           <Outlet />
         </main>
       </div>
