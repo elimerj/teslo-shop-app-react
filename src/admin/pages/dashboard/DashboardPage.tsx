@@ -3,7 +3,6 @@ import { AdminTitle } from '@/admin/components/AdminTitle';
 import Chart from '@/admin/components/Chart';
 import QuickActions from '@/admin/components/QuickActions';
 import { StatCard } from '@/admin/components/StatCard';
-import { useProducts } from '@/shop/hooks/useProducts';
 import {
   Users,
   DollarSign,
@@ -62,8 +61,6 @@ const performanceData = [
 ];
 
 export const DashboardPage = () => {
-  const { data } = useProducts();
-
   return (
     <>
       {/* Welcome Section */}
