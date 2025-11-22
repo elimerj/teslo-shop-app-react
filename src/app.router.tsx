@@ -15,6 +15,7 @@ import {
   AdminRoute,
   NotAuthenticatedRoute,
 } from './components/routes/ProtectedRoutes';
+import { AdminUserPage } from './admin/pages/user/AdminUserPage';
 
 const AuthLayout = lazy(() => import('./auth/layouts/AuthLayout'));
 const AdminLayout = lazy(() => import('./admin/layouts/AdminLayout'));
@@ -81,6 +82,10 @@ export const appRouter = createHashRouter([
       {
         path: 'products',
         element: <AdminProductsPage />,
+      },
+      {
+        path: 'users',
+        element: <AdminUserPage />,
       },
       {
         path: 'products/:id',

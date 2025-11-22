@@ -13,32 +13,32 @@ const QuickActions: React.FC = () => {
     {
       icon: Plus,
       label: 'New Project',
-      color: 'bg-gray-600 hover:bg-blue-500',
+      color: 'bg-blue-600 hover:bg-blue-700',
     },
     {
       icon: UserPlus,
       label: 'Add User',
-      color: 'bg-gray-600 hover:hover:bg-green-500',
+      color: 'bg-green-600 hover:hover:bg-green-700',
     },
     {
       icon: FileText,
       label: 'Generate Report',
-      color: 'bg-gray-600 hover:hover:bg-purple-500',
+      color: 'bg-purple-600 hover:hover:bg-purple-700',
     },
     {
       icon: Download,
       label: 'Export Data',
-      color: 'bg-gray-600 hover:hover:bg-orange-500',
+      color: 'bg-orange-600 hover:hover:bg-orange-700',
     },
     {
       icon: Upload,
       label: 'Import Data',
-      color: 'bg-gray-600 hover:hover:bg-teal-500',
+      color: 'bg-teal-600 hover:hover:bg-teal-700',
     },
     {
       icon: Settings,
       label: 'Settings',
-      color: 'bg-gray-600 hover:hover:bg-red-500',
+      color: 'bg-gray-600 hover:hover:bg-gray-700',
     },
   ];
 

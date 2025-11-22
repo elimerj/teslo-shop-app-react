@@ -19,7 +19,7 @@ const stats = [
     change: '+12.5% from last month',
     changeType: 'positive' as const,
     icon: Users,
-    color: 'bg-gray-600',
+    color: 'bg-blue-600',
   },
   {
     title: 'Revenue',
@@ -27,7 +27,7 @@ const stats = [
     change: '+8.2% from last month',
     changeType: 'positive' as const,
     icon: DollarSign,
-    color: 'bg-gray-600',
+    color: 'bg-blue-600',
   },
   {
     title: 'Orders',
@@ -35,7 +35,7 @@ const stats = [
     change: '-2.4% from last month',
     changeType: 'negative' as const,
     icon: ShoppingCart,
-    color: 'bg-gray-600',
+    color: 'bg-blue-600',
   },
   {
     title: 'Conversion Rate',
@@ -43,7 +43,7 @@ const stats = [
     change: '+0.3% from last month',
     changeType: 'positive' as const,
     icon: TrendingUp,
-    color: 'bg-gray-600',
+    color: 'bg-blue-600',
   },
 ];
 
