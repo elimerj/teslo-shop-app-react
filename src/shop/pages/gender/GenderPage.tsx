@@ -8,11 +8,10 @@ import { useParams } from 'react-router';
 export const GenderPage = () => {
   const { data } = useProducts();
   const { gender = '' } = useParams();
+  if (!data) return <CustomFullScreenLoading />;
 
   const genderLabel =
     gender === 'men' ? 'Hombres' : gender === 'women' ? 'Mujeres' : 'Niños';
-
-  if (!data) return <CustomFullScreenLoading />;
   return (
     <div>
       <CustomJumbotron title={`Productos para ${genderLabel}`} />
