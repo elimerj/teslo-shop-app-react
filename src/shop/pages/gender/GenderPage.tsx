@@ -1,3 +1,4 @@
+import { CustomFullScreenLoading } from '@/components/custom/CustomFullScreenLoading';
 import { CustomPagination } from '@/components/custom/CustomPagination';
 import { CustomJumbotron } from '@/shop/components/CustomJumbotron';
 import { ProductsGrid } from '@/shop/components/ProductsGrid';
@@ -10,6 +11,8 @@ export const GenderPage = () => {
 
   const genderLabel =
     gender === 'men' ? 'Hombres' : gender === 'women' ? 'Mujeres' : 'Niños';
+
+  if (!data) return <CustomFullScreenLoading />;
   return (
     <div>
       <CustomJumbotron title={`Productos para ${genderLabel}`} />

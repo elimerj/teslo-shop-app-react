@@ -103,8 +103,6 @@ export const AdminProductForm = ({
 
     const files = e.dataTransfer.files;
 
-    console.log(files);
-
     if (!files) return;
 
     const currentFiles = getValues('files') || [];
